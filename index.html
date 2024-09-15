@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header finisher-header" style="width: 100%; height: 10px;"></div>
+                <div class="navbar-container container">
+                    
+                    <h1 class="logo">Milestone 5: Unique Path and Shareable Link</h1>
+                </div>
+            </nav>
+    <br><br><br>
+    <form id="resumeForm"> 
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="address">Address (optional):</label>
+            <input type="text" id="address" name="address"><br>
+
+            <label for="city">City:</label>
+            <select id="city" name="city">
+                <option value="">--Select a city--</option>
+                <option value="abbottabad">Abbottabad</option>
+                <option value="bahawalpur">Bahawalpur</option>
+                <option value="gujranwala">Gujranwala</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="islamabad">Islamabad</option>
+                <option value="karachi">Karachi</option>
+                <option value="lahore">Lahore</option>
+                <option value="multan">Multan</option>
+                <option value="peshawar">Peshawar</option>
+                <option value="quetta">Quetta</option>
+                <option value="rawalpindi">Rawalpindi</option>
+                <option value="sialkot">Sialkot</option>
+                <option value="sukkur">Sukkur</option>
+                <option value="sargodha">Sargodha</option>
+            </select required><br><br>
+
+            <label for="phone">Contact No:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="profilePicture">Profile Picture:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label>
+            <textarea name="education" id="education" rows="3" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label>
+            <textarea name="experience" id="experience" rows="3" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <textarea name="skills" id="skills" rows="3" required></textarea>
+        </fieldset>
+        
+        <button type="submit">GENERATE RESUME</button>
+    </form>
+
+    
+    <!-- Placeholder for the resume output -->
+    <div id="resumeOutput" style="display: none; margin-top: 400px;"></div>
+
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="container1">
+              <h6>About</h6>
+              <p class="text-justify" style="width: 600px;"><b><i>ABCcode.com </i></b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum amet <br> quod est, ipsam expedita praesentium saepe,
+                 incidunt molestias architecto sit tempore, nihil  veritatis maxime nam! Temporibus distinctio molestiae incidunt asperiores.</p>
+            </div>
+
+           
+  
+            <div class="container2">
+              <h6>Categories</h6>
+              <ul class="footer-links" style="width: 200px; text-align: justify;">
+                <li><a href="">C</a></li>
+                <li><a href="">UI Design</a></li>
+                <li><a href="">PHP</a></li>
+                <li><a href="">Java</a></li>
+                <li><a href="">Android</a></li>
+                <li><a href="">Templates</a></li>
+              </ul>
+            </div>
+  
+            <div class="container3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Contribute</a></li>
+                <li><a href=""></a>Privacy Policy</a></li>
+                <li><a href="">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="container4">
+              <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+           <a href="#">ABCcode</a>.
+              </p>
+            </div>
+  
+            <div class="container5">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li> 
+            </div>
+          </div>
+        </div>
+  </footer>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
